@@ -24,6 +24,7 @@ const request = async <T>(
     headers["Authorization"] = `Bearer ${token}`;
   }
 
+  console.log(`${BASE_URL}${url}`);
   // Featch request
   const response = await fetch(`${BASE_URL}${url}`, { ...options, headers });
   const data = await response.json();
