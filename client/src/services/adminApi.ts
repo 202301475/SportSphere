@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // While local, uncomment first line, and during production, uncomment second line
 //let API_PREFIX = "/api";
-let API_PREFIX = "https://sportsphere-f6f0.onrender.com/api";
+let API_PREFIX = "https://sportsphere-ipbj.onrender.com/api";
 
 const ensureLeadingSlash = (path: string) => (path.startsWith('/') ? path : `/${path}`);
 const buildAdminUrl = (path: string) => `${API_PREFIX}${ensureLeadingSlash(path)}`;
